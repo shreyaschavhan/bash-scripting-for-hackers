@@ -335,7 +335,7 @@ done
 
 ## 𝐎𝐭𝐡𝐞𝐫 𝐍𝐨𝐭𝐞𝐬
 
-- Chop of the arithmetic operations to decimal points: `bc <<< "scale=3; $expression"` 
+- Chop off the arithmetic operations to decimal points: `bc <<< "scale=3; $expression"` 
 - Round of the arithmetic operation result: `printf %.3f $(echo $expression | bc -l)`
 ---
 > Done
