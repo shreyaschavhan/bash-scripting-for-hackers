@@ -183,6 +183,16 @@ fi
 - `||` : OR
 - `&&` : AND
 
+```
+if [] || []; then
+  <blah blah>
+elif [] && []; then
+  <blah blah>
+else
+  <blah blah>
+fi
+```
+
 Operators | Description
 --- | ---
 `! EXPRESSION` | To check if `EXPRESSION` is false.
