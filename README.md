@@ -337,5 +337,17 @@ done
 
 - Chop off the arithmetic operations to decimal points: `bc <<< "scale=3; $expression"` 
 - Round of the arithmetic operation result: `printf %.3f $(echo $expression | bc -l)`
+
+- Performing Arithmatic Operations (add, subtract, multiply divide) on two variables: `$((EXPR))`
+```
+read -s X;
+read -s Y;
+
+echo $(($X + $Y));
+echo $(($X - $Y));
+echo $(($X * $Y));
+echo $(($X / $Y));
+```
+
 ---
 > Done
