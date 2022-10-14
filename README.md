@@ -387,5 +387,10 @@ tail -n <number of lines>      # display last n lines from a text file
 tail -c <number of characters> # display last n characters from a text file
 ```
 
+- Reading a file line by line
+
+```
+while read -r line; do <command> "$line" done < filename
+```
 ---
 > Done
