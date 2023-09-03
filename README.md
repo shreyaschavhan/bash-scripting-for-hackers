@@ -1,6 +1,6 @@
 `Note: These notes are for my personal reference!`
 
-# 𝐁𝐚𝐬𝐡 𝐒𝐜𝐫𝐢𝐩𝐭𝐢𝐧𝐠 𝐂𝐡𝐞𝐚𝐭𝐬𝐡𝐞𝐞𝐭
+# 𝐁𝐚𝐬𝐡 𝐒𝐜𝐫𝐢𝐩𝐭𝐢𝐧𝐠 for Hackers & Bug Bounty Hunters
 
 ## 𝐁𝐚𝐬𝐢𝐜𝐬
 
@@ -392,5 +392,31 @@ tail -c <number of characters> # display last n characters from a text file
 ```
 while read -r line; do <command> "$line" done < filename
 ```
+
+## Multi-threading or Parallel Execution in bash
+
+- We make use of `parallel` command to execute multiple threads in parallel
+- Installing parallel
+```
+sudo apt install parallel
+```
+- Reading Man Page
+```
+man parallel
+```
+
+- Usage
+```
+parallel [options] [command [arguments]] < list_of_arguments
+
+parallel [options] [command [arguments]] ( ::: arguments | :::+ arguments | :::: argfile(s) | ::::+ argfile(s) ) ...
+
+parallel --semaphore [options] command
+
+#!/usr/bin/parallel --shebang [options] [command [arguments]]
+
+#!/usr/bin/parallel --shebang-wrap [options] [command [arguments]]
+```
+
 ---
 > Done
